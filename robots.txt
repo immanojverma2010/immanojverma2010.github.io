@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-Sitemap: https://kaustubhai.netlify.app/sitemap.xml
+Sitemap: https://immanojverma2010.github.io
 User-agent: *
 Disallow:
