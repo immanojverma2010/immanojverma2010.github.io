@@ -1,1 +1,514 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="This is the portfolio Website of mine. Made with ReactJS and love."><meta name="author" content="Manoj Verma"><meta name="keywords" content="HTML, CSS, Javascript, ReactJS, NodeJS, Coding, Portfolio, Resume, Website, Profile, Github, Linkedin, Design, Interactive, CV, Skills"><meta name="robots" content="index, follow"><meta name="og:title" content="Portfolio Template"><meta name="og:type" content="Resume Website"><meta name="og:locale" content="en_IN"><meta property="og:image" content="/favicon-32x32.png"><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"><link rel="stylesheet" href="./Bootstrap5.css"><script src="https://kit.fontawesome.com/9b271ff51f.js" crossorigin="anonymous"></script><title>Portfolio Template</title><link href="/static/css/2.7fc9bc2b.chunk.css" rel="stylesheet"><link href="/static/css/main.f71b4a92.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpprofile=this.webpackJsonpprofile||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/static/js/2.812c5c9d.chunk.js"></script><script src="/static/js/main.b87b29e2.chunk.js"></script></body><script>const darkPref=window.matchMedia("(prefers-color-scheme: dark)");darkPref.matches&&"Light"!==localStorage.getItem("mode")&&localStorage.setItem("mode","Dark")</script><script>const fun=()=>{if("Dark"===localStorage.getItem("mode")){document.getElementById("mode-switch").checked=!0,document.documentElement.classList.toggle("dark-mode"),document.getElementById("not-dark").classList.toggle("inverse-dark"),document.getElementById("not-dark2").classList.toggle("inverse-dark");var e=document.getElementsByClassName("img-pro");for(let t=0;t<e.length;t+=1)e.item(t).classList.toggle("inverse-dark")}};fun()</script></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="This is the portfolio Website of mine. Made with ReactJS and love."><meta name="author" content="Manoj Verma"><meta name="keywords" content="HTML, CSS, Javascript, ReactJS, NodeJS, Coding, Portfolio, Resume, Website, Profile, Github, Linkedin, Design, Interactive, CV, Skills"><meta name="robots" content="index, follow"><meta name="og:title" content="Portfolio Template"><meta name="og:type" content="Resume Website"><meta name="og:locale" content="en_IN"><meta property="og:image" content="/favicon-32x32.png"><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"><link rel="stylesheet" href="./Bootstrap5.css"><script src="https://kit.fontawesome.com/9b271ff51f.js" crossorigin="anonymous"></script><title>Portfolio Template</title><link href="/static/css/2.7fc9bc2b.chunk.css" rel="stylesheet"><link href="/static/css/main.f71b4a92.chunk.css" rel="stylesheet"><style>#root{visibility:hidden;opacity:0;transition:opacity .2s ease,visibility .2s ease;}#root.ready{visibility:visible;opacity:1;}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpprofile=this.webpackJsonpprofile||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/static/js/2.812c5c9d.chunk.js"></script><script src="/static/js/main.b87b29e2.chunk.js"></script></body><script>
+(() => {
+  const style = document.createElement('style');
+  style.textContent = `
+    .third {
+      width: min(1180px, 90vw);
+      max-width: 1180px;
+      margin: 10% auto;
+      padding: 3%;
+    }
+
+    .third { width: min(1180px, 94vw); max-width: 1180px; margin: 6% auto; padding: 2% 3% 3%; }
+
+    .third .row {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 28px;
+      column-gap: 28px;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    .third .row > .project-card {
+      flex: 0 0 calc(33.333% - 18px);
+      max-width: calc(33.333% - 18px);
+      min-width: 0;
+      display:flex;flex-direction:column;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 380px;
+      margin: 0;
+      padding: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      background: rgba(255,255,255,0.98);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      overflow: hidden;
+    }
+
+    .project-card .card-body { display:flex;flex-direction:column;flex:1 1 auto;padding:12px 6px 6px; }
+
+    .project-card .demo-gif,
+    .project-card .image-project { height: 200px !important; object-fit: cover; margin-bottom: 12px; }
+
+    .project-card .img-pro { min-height: 200px !important; }
+
+    .project-card .project-name { margin-top:auto; display:block; padding:12px 6px 0; color:inherit }
+
+    .project-card h2 { margin:0 0 6px; color:var(--primary-color); }
+
+    @media (max-width: 1200px) { .third .row > .project-card { flex:0 0 calc(50% - 18px); max-width: calc(50% - 18px); } }
+
+    @media (max-width: 767px) {
+      .third .row { display:block; }
+      .third .row > .project-card { width:100%; max-width:100%; flex-basis:100%; }
+    }
+
+    .project-card,
+    .project-card .demo-gif,
+    .project-card .image-project,
+    .project-card .img-pro,
+    .skill__square,
+    .skill__square .skill-icon,
+    .about,
+    .third,
+    .contact,
+    .git-form,
+    .half form input,
+    .half form textarea,
+    .half form button,
+    .social-links a,
+    .top-button,
+    .see,
+    .switch .slider {
+      border-radius: 16px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 44px rgba(15, 23, 42, 0.12);
+    }
+
+    .project-card .demo-gif,
+    .project-card .image-project,
+    .project-card .img-pro {
+      display: block;
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    .project-card .demo-gif,
+    .project-card .image-project {
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+
+    .project-card .image-project {
+      flex-shrink: 0;
+      height: 200px;
+      margin-bottom: 14px;
+    }
+
+    .project-card .img-pro {
+      height: 100%;
+      min-height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .project-card .project-name {
+      display: block;
+      margin-top: auto;
+      text-decoration: none;
+    }
+
+    .project-card h2 {
+      margin: 0 0 8px;
+      color: var(--primary-color);
+      font-size: 1.35rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .project-card h3 {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.5;
+      color: rgba(15, 23, 42, 0.75);
+    }
+
+    .skills { opacity: 0; transition: opacity 0.18s ease; }
+    .skills[data-ready="true"] { opacity: 1; }
+    .skill__square { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .skill__square .skill-icon { width: 42px; height: 42px; display: block; margin: 0 auto; filter: drop-shadow(0 0 8px rgba(102,126,234,.18)); }
+    .skill__square h6 { margin-top: 8px; }
+
+    @media (max-width: 1100px) {
+      .third .row > .project-card {
+        flex: 0 0 calc(50% - 18px);
+        max-width: calc(50% - 18px);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .third .row {
+        display: block;
+      }
+
+      .third .row > .project-card {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  const customIconSvg = (label, id) => {
+    const common = `viewBox="0 0 64 64" width="42" height="42" xmlns="http://www.w3.org/2000/svg"`;
+    const palette = {
+      RAG: `<svg ${common}><defs><linearGradient id="${id}-grad" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#6ee7b7"/><stop offset="50%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs><rect x="8" y="8" width="48" height="48" rx="14" fill="#0f172a" stroke="url(#${id}-grad)" stroke-width="2"/><path d="M21 22.5c3.8-6.8 12.4-8.3 19.1-4.8a10 10 0 0 1 4.2 4.7c1.2 2.7 1.2 5.8-.2 8.5-1.7 3.3-4.9 5.7-8.4 7.1-1.8.7-3.7 1.1-5.6 1.5-4.1.8-8.7 1.7-11.1 5.2" fill="none" stroke="url(#${id}-grad)" stroke-width="3" stroke-linecap="round"/><circle cx="23" cy="23" r="4" fill="none" stroke="#7dd3fc" stroke-width="2.5"/><circle cx="39" cy="39" r="4" fill="none" stroke="#7dd3fc" stroke-width="2.5"/><path d="M26 27l9 9" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+      'Vector Search': `<svg ${common}><rect x="8" y="8" width="48" height="48" rx="14" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/><path d="M20 20h24v24H20z" fill="none" stroke="#60a5fa" stroke-width="2.5"/><path d="M28 20v24M20 28h24M20 36h24" stroke="#93c5fd" stroke-width="2" opacity="0.8"/><circle cx="24" cy="24" r="2.5" fill="#bfdbfe"/><circle cx="40" cy="38" r="2.5" fill="#bfdbfe"/></svg>`
+    };
+    return palette[label] || palette.RAG;
+  };
+
+  const iconSources = {
+    RAG: `data:image/svg+xml;utf8,${encodeURIComponent(customIconSvg('RAG', 'skill-rag'))}`,
+    'OpenAI / GenAI': 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg',
+    LangChain: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langchain.svg',
+    'Vector Search': `data:image/svg+xml;utf8,${encodeURIComponent(customIconSvg('Vector Search', 'skill-vector'))}`,
+    'Node.js': 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nodedotjs.svg',
+    Python: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg',
+    'FastAPI': 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fastapi.svg',
+    Cloud: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlecloud.svg'
+  };
+
+  const mapSkillLabel = (label) => {
+    const mapping = { HTML5: 'RAG', CSS3: 'OpenAI / GenAI', Javascript: 'LangChain', SASS: 'Vector Search', Node: 'Node.js', Python: 'Python', Database: 'FastAPI', AWS: 'Cloud' };
+    return mapping[label] || label;
+  };
+
+  const updateAbout = () => {
+    const about = document.querySelector('#about .about p');
+    if (about) about.textContent = 'Senior Full Stack & AI Engineer with 10+ years of experience building resilient cloud systems, real-time streaming AI interfaces, and data-driven web applications across enterprise domains.';
+  };
+
+  const updateSkills = () => {
+    const skillsRoot = document.querySelector('.skills');
+    if (skillsRoot) skillsRoot.setAttribute('data-ready', 'false');
+
+    document.querySelectorAll('.skill__square').forEach((card) => {
+      const title = card.querySelector('h6');
+      if (!title) return;
+      const current = title.textContent.trim();
+      const next = mapSkillLabel(current);
+      if (card.querySelector('.skill-icon') && title.textContent.trim() === next) return;
+
+      title.textContent = next;
+      const img = document.createElement('img');
+      img.src = iconSources[next] || iconSources.RAG;
+      img.alt = next;
+      img.className = 'skill-icon';
+      img.loading = 'lazy';
+      card.innerHTML = '';
+      card.appendChild(img);
+      const h6 = document.createElement('h6');
+      h6.className = 'mt-2';
+      h6.textContent = next;
+      card.appendChild(h6);
+    });
+
+    if (skillsRoot) skillsRoot.setAttribute('data-ready', 'true');
+  };
+
+  const updateProjectCard = () => {
+    const projectSection = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Past Projects'));
+    const projectRow = projectSection && projectSection.querySelector('.row');
+    if (!projectRow) return;
+
+    // Try to find an existing Banking RAG Assistant card
+    const projectCards = [...projectRow.querySelectorAll('.project-card')];
+    let bankCard = projectCards.find((card) => card.textContent.includes('Banking RAG Assistant'));
+
+    // If not found, create and insert a new project card for Banking RAG Assistant
+    if (!bankCard) {
+      bankCard = document.createElement('div');
+      bankCard.className = 'project-card';
+
+      // demo gif image
+      const gif = document.createElement('img');
+      gif.className = 'demo-gif';
+      gif.src = '/banking-rag-demo.gif';
+      gif.alt = 'Banking RAG Assistant demo';
+      gif.loading = 'lazy';
+      gif.style.width = '100%';
+      gif.style.display = 'block';
+
+      // card body
+      const body = document.createElement('div');
+      body.className = 'card-body';
+
+      const link = document.createElement('a');
+      link.className = 'project-name';
+      link.href = 'https://github.com/immanojverma2010/banking-rag-assistant';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+
+      const h2 = document.createElement('h2');
+      h2.textContent = 'Banking RAG Assistant';
+      link.appendChild(h2);
+
+      const h3 = document.createElement('h3');
+      h3.textContent = 'Node.js, LangChain, OpenAI, RAG, GenAI';
+
+      // Only include the tech line as requested
+      body.appendChild(link);
+      body.appendChild(h3);
+
+      bankCard.appendChild(gif);
+      bankCard.appendChild(body);
+
+      // Insert the new card as the first project
+      projectRow.insertBefore(bankCard, projectRow.firstChild);
+    }
+
+    // Ensure the gif is present and image areas hidden if necessary
+    if (!bankCard.querySelector('img.demo-gif')) {
+      const img = document.createElement('img');
+      img.src = '/banking-rag-demo.gif';
+      img.alt = 'Banking RAG Assistant demo';
+      img.className = 'demo-gif';
+      img.loading = 'lazy';
+      bankCard.insertBefore(img, bankCard.firstChild);
+    }
+
+    // Remove any extra paragraph description and only leave the tech line
+    const descP = bankCard.querySelector('p');
+    if (descP) descP.remove();
+
+    const bankImageProject = bankCard.querySelector('.image-project');
+    if (bankImageProject) bankImageProject.style.display = 'none';
+
+    const bankLink = bankCard.querySelector('a');
+    if (bankLink) {
+      bankLink.href = 'https://github.com/immanojverma2010/banking-rag-assistant';
+      bankLink.setAttribute('target', '_blank');
+      bankLink.setAttribute('rel', 'noopener noreferrer');
+    }
+
+    const bankSkillNode = bankCard.querySelector('h3');
+    if (bankSkillNode) bankSkillNode.textContent = 'Node.js, LangChain, OpenAI, RAG, GenAI';
+
+    // Apply small style tweaks so the created card matches others
+    try {
+      bankCard.style.padding = '12px';
+      bankCard.style.borderRadius = '18px';
+      bankCard.style.background = 'rgba(255,255,255,0.98)';
+      const gifEl = bankCard.querySelector('.demo-gif');
+      if (gifEl) {
+        gifEl.style.height = '200px';
+        gifEl.style.objectFit = 'cover';
+        gifEl.style.borderRadius = '14px';
+        gifEl.style.marginBottom = '12px';
+      }
+    } catch (e) {}
+  };
+
+  const updateProjectOrder = () => {
+    const projectSection = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Past Projects'));
+    const projectRow = projectSection && projectSection.querySelector('.row');
+    if (!projectRow) return;
+
+    const bankCard = [...projectRow.children].find((node) => node.textContent.includes('Banking RAG Assistant'));
+    if (bankCard) projectRow.insertBefore(bankCard, projectRow.firstChild);
+  };
+
+  const applyProjectGridLayout = () => {
+    const projectSection = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Past Projects'));
+    const projectRow = projectSection && projectSection.querySelector('.row');
+    if (!projectRow) return;
+
+    projectRow.style.display = 'flex';
+    // Arrange all projects in a single horizontal row (non-wrapping) on desktop/tablet
+    projectRow.style.flexWrap = 'nowrap';
+    projectRow.style.gap = '28px';
+    projectRow.style.alignItems = 'stretch';
+    projectRow.style.justifyContent = 'flex-start';
+    projectRow.style.overflowX = 'auto';
+    projectRow.style.paddingBottom = '8px';
+    projectRow.style.WebkitOverflowScrolling = 'touch';
+
+    const cards = [...projectRow.children].filter((node) => node.classList.contains('project-card'));
+    const isTablet = window.innerWidth <= 1100 && window.innerWidth > 767;
+    const isMobile = window.innerWidth <= 767;
+
+    const total = cards.length || 1;
+    cards.forEach((card) => {
+      card.style.margin = '0';
+      if (isMobile) {
+        card.style.flex = '0 0 100%';
+        card.style.maxWidth = '100%';
+        card.style.width = '100%';
+      } else {
+        // Split the available width across all cards so they appear in one row without wrapping
+        const pct = (100 / total).toFixed(6);
+        card.style.flex = `0 0 calc(${pct}% - 18px)`;
+        card.style.maxWidth = `calc(${pct}% - 18px)`;
+        card.style.width = 'auto';
+        card.style.minWidth = '220px';
+      }
+
+      // Force consistent image area heights via inline styles to avoid flicker from styles injected by the bundle
+      try {
+        const img = card.querySelector('.image-project');
+        const gif = card.querySelector('.demo-gif');
+        const imgPro = card.querySelector('.img-pro');
+        if (img) { img.style.height = '200px'; img.style.minHeight = '200px'; img.style.objectFit = 'cover'; }
+        if (gif) { gif.style.height = '200px'; gif.style.minHeight = '200px'; gif.style.objectFit = 'cover'; }
+        if (imgPro) { imgPro.style.minHeight = '200px'; imgPro.style.height = '200px'; imgPro.style.backgroundSize = 'cover'; }
+      } catch (e) {
+        // ignore
+      }
+    });
+  };
+
+  const updateProficiency = () => {
+    const entries = [
+      { label: 'Backend', width: '90%' },
+      { label: 'AI', width: '70%' },
+      { label: 'Programming', width: '80%' }
+    ];
+
+    const bars = [...document.querySelectorAll('.skill')];
+    bars.forEach((bar, index) => {
+      const item = entries[index] || entries[entries.length - 1];
+      const p = bar.querySelector('p');
+      const meter = bar.querySelector('.meter span');
+      if (p) p.textContent = item.label;
+      if (meter) meter.style.width = item.width;
+    });
+  };
+
+  const removeMisc = () => {
+    const misc = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Miscellaneous'));
+    if (misc) misc.remove();
+  };
+
+  const updateProfile = () => {
+    const profile = document.querySelector('#not-dark2, img[alt="profile img"]');
+    if (profile) {
+      profile.src = '/professional-profile.png';
+      profile.alt = 'Senior Full Stack & AI Engineer';
+      profile.style.objectFit = 'cover';
+    }
+  };
+
+  const showRoot = () => {
+    const root = document.getElementById('root');
+    if (root) root.classList.add('ready');
+  };
+
+  // Remove a project card by exact text match in its content
+  const removeProjectByTitle = (title) => {
+    const projectSection = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Past Projects'));
+    const projectRow = projectSection && projectSection.querySelector('.row');
+    if (!projectRow) return;
+    const card = [...projectRow.children].find((node) => node.textContent.includes(title));
+    if (card) card.remove();
+  };
+
+  // Rename a project's H2/title from one value to another
+  const renameProjectTitle = (fromText, toText) => {
+    const projectSection = [...document.querySelectorAll('.third')].find((section) => section.textContent.includes('Past Projects'));
+    const projectRow = projectSection && projectSection.querySelector('.row');
+    if (!projectRow) return;
+    const card = [...projectRow.children].find((node) => node.textContent.includes(fromText));
+    if (!card) return;
+    const h2 = card.querySelector('h2') || card.querySelector('.project-name h2') || card.querySelector('.project-name');
+    if (h2) h2.textContent = toText;
+  };
+
+  const run = () => {
+    const about = document.querySelector('#about .about p');
+    const isOldAbout = about && about.textContent.includes('Senior Full Stack & AI Engineer 🚀');
+    const hasOldSkill = [...document.querySelectorAll('.skill__square h6')].some((node) => ['HTML5', 'CSS3', 'Javascript', 'SASS'].includes(node.textContent.trim()));
+
+    if (document.documentElement.dataset.portfolioPatchApplied === 'true' && !isOldAbout && !hasOldSkill) {
+      showRoot();
+      return;
+    }
+
+    document.documentElement.dataset.portfolioPatchApplied = 'true';
+
+    updateAbout();
+    updateSkills();
+    updateProjectCard();
+    updateProjectOrder();
+    applyProjectGridLayout();
+    updateProficiency();
+    removeMisc();
+
+    // Remove the old Movie App project if present
+    removeProjectByTitle('Movie App');
+    // Rename Node Express project to Movie Listing App
+    renameProjectTitle('Node Express', 'Movie Listing App');
+
+    updateProfile();
+    showRoot();
+  };
+
+  let patchTimer;
+  const scheduleRun = () => {
+    clearTimeout(patchTimer);
+    patchTimer = setTimeout(run, 120);
+  };
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    scheduleRun();
+  } else {
+    window.addEventListener('load', scheduleRun);
+  }
+
+  const rootNode = document.getElementById('root');
+  if (rootNode) {
+    const observer = new MutationObserver(() => {
+      scheduleRun();
+      applyProjectGridLayout();
+    });
+    observer.observe(rootNode, { childList: true, subtree: true, attributes: true, characterData: true });
+  }
+
+  window.addEventListener('resize', () => {
+    scheduleRun();
+    applyProjectGridLayout();
+  });
+})();
+</script>
+<script>
+(function(){
+  const enforce = () => {
+    document.querySelectorAll('.project-card .image-project, .project-card .demo-gif, .project-card .img-pro').forEach(el => {
+      el.style.height = '200px';
+      el.style.minHeight = '200px';
+      el.style.objectFit = 'cover';
+    });
+  };
+  window.addEventListener('load', () => setTimeout(enforce, 150));
+  const ro = new MutationObserver(() => enforce());
+  ro.observe(document.body, { childList: true, subtree: true, attributes: true });
+  let attempts = 0;
+  const iv = setInterval(() => { enforce(); attempts++; if (attempts > 20) clearInterval(iv); }, 150);
+})();
+</script>
+<style>
+  /* Hide horizontal scrollbar for the Projects row but retain scrolling */
+  .third .row {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .third .row::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+    height: 0; /* ensure horizontal scrollbar reserved space is removed */
+  }
+</style>
+</html>
